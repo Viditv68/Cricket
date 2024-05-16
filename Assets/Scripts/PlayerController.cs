@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private CharacterController characterController;
+    [SerializeField] private CameraController cameraController;
 
     private Vector3 movementDirection;
 
@@ -27,11 +28,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        ApplyMovement();
+        if(GameManager.Instance.startOver)
+            ApplyMovement();
 
         if(canThowBall)
             DisplayTrajectory();
     }
+
+    #region [ ========= Movements =========]
 
 
     private void ApplyMovement()
@@ -43,6 +47,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    #endregion
+
     #region[======= Line Renderer =========]
 
     private void DisplayTrajectory()
@@ -51,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, layer))
         {
-            Debug.Log("Hit some thing");
+
             Vector3 velocity = CalculateVelocity(hitInfo.point, point.position, 1f);
 
             Visualize(velocity);
@@ -113,6 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         speed = 0;
         canThowBall = true;
+        cameraController.SetStatusOfCinemchineBrain(true);
     }
 
 
