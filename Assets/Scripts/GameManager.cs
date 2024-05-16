@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
 
     public bool playWarmupCutScene = false;
-    public bool startOver = true;
+    public bool startOver = false;
 
     private void OnEnable()
     {

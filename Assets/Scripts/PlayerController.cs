@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Rigidbody obj = Instantiate(rb, point.position + new Vector3(0f, 0f, 3f), Quaternion.identity);
+                obj.gameObject.SetActive(true);
                 obj.velocity = velocity;
             }
         }
