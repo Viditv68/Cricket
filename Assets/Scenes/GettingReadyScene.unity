@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 21574577}
   - component: {fileID: 21574576}
   - component: {fileID: 21574580}
-  - component: {fileID: 21574581}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -257,18 +256,6 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &21574581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21574573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e6c44fe0bc09dd4085b8fb2c1b97864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,16 +456,16 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -2939629410235937497, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
     value: {fileID: 330585549}
-  - key: {fileID: -8113148884655332094, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
+  - key: {fileID: -6689712208556326615, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
     value: {fileID: 518744378}
-  - key: {fileID: -2172348575330544253, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
+  - key: {fileID: -1908024578539047910, guid: 727de29621c48cc4291fc97e049e026d, type: 2}
     value: {fileID: 2077627502}
   m_ExposedReferences:
     m_References:
@@ -933,7 +920,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518744368}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55bebcf839c652c4e9dbc60aaac7222d, type: 3}
   m_Name: 
@@ -1363,7 +1350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed63272a75580704ab0eb25f9207e6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playVowlCutScene: 0
+  playWarmupCutScene: 0
+  startOver: 1
 --- !u!4 &1073506149
 Transform:
   m_ObjectHideFlags: 0
