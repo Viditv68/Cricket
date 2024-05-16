@@ -409,7 +409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cinemachineBrain: {fileID: 330585549}
-  directorl: {fileID: 330585550}
   player: {fileID: 518744372}
   offset: 13
 --- !u!114 &330585549
@@ -1422,7 +1421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed63272a75580704ab0eb25f9207e6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playWarmupCutScene: 0
   startOver: 0
 --- !u!4 &1073506149
 Transform:
@@ -1503,7 +1501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353703777}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: -1.94, y: 7.03, z: -41.2}
+  m_LocalPosition: {x: -1.94, y: 9.42, z: -37.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

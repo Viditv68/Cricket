@@ -8,7 +8,6 @@ using UnityEngine.Playables;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private CinemachineBrain _cinemachineBrain;
-    [SerializeField] private PlayableDirector directorl;
     [SerializeField] private Transform player;
 
     [SerializeField] private float offset;

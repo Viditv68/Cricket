@@ -9,13 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return instance; } }
 
 
-    public bool playWarmupCutScene = false;
     public bool startOver = false;
 
-    private void OnEnable()
-    {
-        Debug.Log("Gamem manager is actricve");
-    }
 
     private void Awake()
     {
