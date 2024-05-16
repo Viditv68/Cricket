@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyMovement()
     {
+
         movementDirection = new Vector3(0, 0, 1);
         if (movementDirection.magnitude > 0)
         {

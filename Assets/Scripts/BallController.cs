@@ -6,10 +6,6 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        GameManager.Instance.playVowlCutScene = true;
-    }
-
+   
 
 }

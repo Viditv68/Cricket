@@ -22,10 +22,11 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z - offset);
-        if(GameManager.Instance.playVowlCutScene)
+        if(!GameManager.Instance.playWarmupCutScene)
         {
-            directorl.Play();
+            directorl.Stop();
         }
+
     
     }
 
@@ -34,4 +35,6 @@ public class CameraController : MonoBehaviour
     {
         _cinemachineBrain.enabled = _flag;
     }
+
+   
 }

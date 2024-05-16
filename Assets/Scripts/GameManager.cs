@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return instance; } }
 
 
-    public bool playVowlCutScene = false;
-    public bool startOver = false;
+    public bool playWarmupCutScene = false;
+    public bool startOver = true;
 
     private void OnEnable()
     {

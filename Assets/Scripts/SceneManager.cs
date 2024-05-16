@@ -9,5 +9,8 @@ public class SceneManager : MonoBehaviour
     private void OnEnable()
     {
         GameManager.Instance.startOver = true;
+        GameManager.Instance.playWarmupCutScene = false;
     }
+
+    
 }
